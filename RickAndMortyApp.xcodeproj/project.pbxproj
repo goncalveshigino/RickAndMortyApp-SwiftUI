@@ -19,6 +19,10 @@
 		D6D5E0332B9DCE330011992B /* NSCacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0322B9DCE330011992B /* NSCacheStore.swift */; };
 		D6D5E03A2B9DD7C10011992B /* CharacterListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0392B9DD7C10011992B /* CharacterListResponse.swift */; };
 		D6D5E03E2B9DD94A0011992B /* CharacterListFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E03D2B9DD9490011992B /* CharacterListFake.swift */; };
+		D6D5E0432B9DF6B30011992B /* CharacterRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0422B9DF6B30011992B /* CharacterRepositoryTest.swift */; };
+		D6D5E0452B9DF9450011992B /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0442B9DF9450011992B /* CharacterRepository.swift */; };
+		D6D5E0482B9DFDD70011992B /* RemoteURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0472B9DFDD70011992B /* RemoteURL.swift */; };
+		D6D5E04B2B9E001E0011992B /* FakeApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E04A2B9E001E0011992B /* FakeApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		D6D5E0322B9DCE330011992B /* NSCacheStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheStore.swift; sourceTree = "<group>"; };
 		D6D5E0392B9DD7C10011992B /* CharacterListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListResponse.swift; sourceTree = "<group>"; };
 		D6D5E03D2B9DD9490011992B /* CharacterListFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListFake.swift; sourceTree = "<group>"; };
+		D6D5E0422B9DF6B30011992B /* CharacterRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryTest.swift; sourceTree = "<group>"; };
+		D6D5E0442B9DF9450011992B /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		D6D5E0472B9DFDD70011992B /* RemoteURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteURL.swift; sourceTree = "<group>"; };
+		D6D5E04A2B9E001E0011992B /* FakeApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,7 @@
 		D6D5E0102B9DA49F0011992B /* RickAndMortyAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				D6D5E03F2B9DF6590011992B /* Features */,
 				D6D5E03B2B9DD9050011992B /* Fakes */,
 				D6D5E0112B9DA49F0011992B /* RickAndMortyAppTests.swift */,
 			);
@@ -151,6 +160,7 @@
 		D6D5E02B2B9DAB470011992B /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D6D5E0462B9DFDC20011992B /* RemoteURL */,
 				D6D5E0312B9DCE050011992B /* NSCache */,
 				D6D5E02E2B9DAD020011992B /* AppError */,
 				D6D5E02C2B9DAB6A0011992B /* AppService.swift */,
@@ -202,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				D6D5E0382B9DD7A30011992B /* Response */,
+				D6D5E0442B9DF9450011992B /* CharacterRepository.swift */,
 			);
 			path = CharacterRepository;
 			sourceTree = "<group>";
@@ -217,6 +228,7 @@
 		D6D5E03B2B9DD9050011992B /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
+				D6D5E0492B9E00060011992B /* ApiService */,
 				D6D5E03C2B9DD9240011992B /* RawData */,
 			);
 			path = Fakes;
@@ -228,6 +240,46 @@
 				D6D5E03D2B9DD9490011992B /* CharacterListFake.swift */,
 			);
 			path = RawData;
+			sourceTree = "<group>";
+		};
+		D6D5E03F2B9DF6590011992B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0402B9DF6630011992B /* Data */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D6D5E0402B9DF6630011992B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0412B9DF66B0011992B /* CharacterRepository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D6D5E0412B9DF66B0011992B /* CharacterRepository */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0422B9DF6B30011992B /* CharacterRepositoryTest.swift */,
+			);
+			path = CharacterRepository;
+			sourceTree = "<group>";
+		};
+		D6D5E0462B9DFDC20011992B /* RemoteURL */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0472B9DFDD70011992B /* RemoteURL.swift */,
+			);
+			path = RemoteURL;
+			sourceTree = "<group>";
+		};
+		D6D5E0492B9E00060011992B /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E04A2B9E001E0011992B /* FakeApiService.swift */,
+			);
+			path = ApiService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,9 +413,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D5E0302B9DAD190011992B /* AppError.swift in Sources */,
+				D6D5E0482B9DFDD70011992B /* RemoteURL.swift in Sources */,
 				D6D5E0332B9DCE330011992B /* NSCacheStore.swift in Sources */,
 				D6D5E03A2B9DD7C10011992B /* CharacterListResponse.swift in Sources */,
 				D6D5E0032B9DA49C0011992B /* ContentView.swift in Sources */,
+				D6D5E0452B9DF9450011992B /* CharacterRepository.swift in Sources */,
 				D6D5E02D2B9DAB6A0011992B /* AppService.swift in Sources */,
 				D6D5E0012B9DA49C0011992B /* RickAndMortyAppApp.swift in Sources */,
 			);
@@ -374,7 +428,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D5E03E2B9DD94A0011992B /* CharacterListFake.swift in Sources */,
+				D6D5E04B2B9E001E0011992B /* FakeApiService.swift in Sources */,
 				D6D5E0122B9DA49F0011992B /* RickAndMortyAppTests.swift in Sources */,
+				D6D5E0432B9DF6B30011992B /* CharacterRepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
