@@ -17,6 +17,8 @@
 		D6D5E02D2B9DAB6A0011992B /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E02C2B9DAB6A0011992B /* AppService.swift */; };
 		D6D5E0302B9DAD190011992B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E02F2B9DAD190011992B /* AppError.swift */; };
 		D6D5E0332B9DCE330011992B /* NSCacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0322B9DCE330011992B /* NSCacheStore.swift */; };
+		D6D5E03A2B9DD7C10011992B /* CharacterListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0392B9DD7C10011992B /* CharacterListResponse.swift */; };
+		D6D5E03E2B9DD94A0011992B /* CharacterListFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E03D2B9DD9490011992B /* CharacterListFake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		D6D5E02C2B9DAB6A0011992B /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		D6D5E02F2B9DAD190011992B /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		D6D5E0322B9DCE330011992B /* NSCacheStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheStore.swift; sourceTree = "<group>"; };
+		D6D5E0392B9DD7C10011992B /* CharacterListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListResponse.swift; sourceTree = "<group>"; };
+		D6D5E03D2B9DD9490011992B /* CharacterListFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListFake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 			children = (
 				D6D5E02A2B9DAB2B0011992B /* App */,
 				D6D5E02B2B9DAB470011992B /* Base */,
+				D6D5E0342B9DD7490011992B /* Features */,
 				D6D5E0042B9DA49E0011992B /* Assets.xcassets */,
 				D6D5E0062B9DA49E0011992B /* Preview Content */,
 			);
@@ -119,6 +124,7 @@
 		D6D5E0102B9DA49F0011992B /* RickAndMortyAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				D6D5E03B2B9DD9050011992B /* Fakes */,
 				D6D5E0112B9DA49F0011992B /* RickAndMortyAppTests.swift */,
 			);
 			path = RickAndMortyAppTests;
@@ -166,6 +172,62 @@
 				D6D5E0322B9DCE330011992B /* NSCacheStore.swift */,
 			);
 			path = NSCache;
+			sourceTree = "<group>";
+		};
+		D6D5E0342B9DD7490011992B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0352B9DD7640011992B /* Data */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D6D5E0352B9DD7640011992B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0362B9DD76F0011992B /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D6D5E0362B9DD76F0011992B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0372B9DD7860011992B /* CharacterRepository */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D6D5E0372B9DD7860011992B /* CharacterRepository */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0382B9DD7A30011992B /* Response */,
+			);
+			path = CharacterRepository;
+			sourceTree = "<group>";
+		};
+		D6D5E0382B9DD7A30011992B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0392B9DD7C10011992B /* CharacterListResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		D6D5E03B2B9DD9050011992B /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E03C2B9DD9240011992B /* RawData */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
+		D6D5E03C2B9DD9240011992B /* RawData */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E03D2B9DD9490011992B /* CharacterListFake.swift */,
+			);
+			path = RawData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +362,7 @@
 			files = (
 				D6D5E0302B9DAD190011992B /* AppError.swift in Sources */,
 				D6D5E0332B9DCE330011992B /* NSCacheStore.swift in Sources */,
+				D6D5E03A2B9DD7C10011992B /* CharacterListResponse.swift in Sources */,
 				D6D5E0032B9DA49C0011992B /* ContentView.swift in Sources */,
 				D6D5E02D2B9DAB6A0011992B /* AppService.swift in Sources */,
 				D6D5E0012B9DA49C0011992B /* RickAndMortyAppApp.swift in Sources */,
@@ -310,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D5E03E2B9DD94A0011992B /* CharacterListFake.swift in Sources */,
 				D6D5E0122B9DA49F0011992B /* RickAndMortyAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
