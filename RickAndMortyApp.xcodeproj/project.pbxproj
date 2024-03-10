@@ -22,6 +22,7 @@
 		D6D5E0432B9DF6B30011992B /* CharacterRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0422B9DF6B30011992B /* CharacterRepositoryTest.swift */; };
 		D6D5E0452B9DF9450011992B /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0442B9DF9450011992B /* CharacterRepository.swift */; };
 		D6D5E0482B9DFDD70011992B /* RemoteURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0472B9DFDD70011992B /* RemoteURL.swift */; };
+		D6D5E04B2B9E001E0011992B /* FakeApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E04A2B9E001E0011992B /* FakeApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		D6D5E0422B9DF6B30011992B /* CharacterRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryTest.swift; sourceTree = "<group>"; };
 		D6D5E0442B9DF9450011992B /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		D6D5E0472B9DFDD70011992B /* RemoteURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteURL.swift; sourceTree = "<group>"; };
+		D6D5E04A2B9E001E0011992B /* FakeApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 		D6D5E03B2B9DD9050011992B /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
+				D6D5E0492B9E00060011992B /* ApiService */,
 				D6D5E03C2B9DD9240011992B /* RawData */,
 			);
 			path = Fakes;
@@ -269,6 +272,14 @@
 				D6D5E0472B9DFDD70011992B /* RemoteURL.swift */,
 			);
 			path = RemoteURL;
+			sourceTree = "<group>";
+		};
+		D6D5E0492B9E00060011992B /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E04A2B9E001E0011992B /* FakeApiService.swift */,
+			);
+			path = ApiService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D5E03E2B9DD94A0011992B /* CharacterListFake.swift in Sources */,
+				D6D5E04B2B9E001E0011992B /* FakeApiService.swift in Sources */,
 				D6D5E0122B9DA49F0011992B /* RickAndMortyAppTests.swift in Sources */,
 				D6D5E0432B9DF6B30011992B /* CharacterRepositoryTest.swift in Sources */,
 			);

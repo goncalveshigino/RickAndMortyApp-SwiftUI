@@ -15,8 +15,8 @@ class CharacterRepositoryTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        sut = DefaultCharacterRepository()
-        sutFailure = DefaultCharacterRepository()
+        sut = DefaultCharacterRepository(apiService: CharacterListFakeApiServiceSuccess())
+        sutFailure = DefaultCharacterRepository(apiService: CharacterListFakeApiServiceFailure())
     }
     
     override func tearDown() {
