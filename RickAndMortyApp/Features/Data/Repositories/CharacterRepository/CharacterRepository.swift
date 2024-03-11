@@ -59,6 +59,7 @@ extension DefaultCharacterRepository {
 }
 
 extension DefaultCharacterRepository {
+    
     private func getEndPointForPagination(by name: String, and pageNumber: String?) -> String {
         if let pageNumber = pageNumber {
             return RemoteURL.baseUrl + RemoteURL.characterUrl + "\(RemoteURL.name)\(name)" + "\(RemoteURL.searchPagination)\(pageNumber)"
@@ -66,4 +67,5 @@ extension DefaultCharacterRepository {
             return RemoteURL.baseUrl + RemoteURL.characterUrl + "\(RemoteURL.name)\(name)"
         }
     }
+    
 }

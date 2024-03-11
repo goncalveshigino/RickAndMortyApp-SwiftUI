@@ -16,6 +16,7 @@ enum AppError: Error {
 }
 
 extension AppError {
+    
     var errorDescription: String? {
         switch self {
         case .serviceError(let error):
@@ -30,4 +31,5 @@ extension AppError {
             return NSLocalizedString("APP-ERROR", comment: "Parse error")
         }
     }
+    
 }

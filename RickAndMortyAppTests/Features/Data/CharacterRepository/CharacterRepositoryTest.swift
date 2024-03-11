@@ -28,6 +28,7 @@ class CharacterRepositoryTest: XCTestCase {
 
 //MARK: - Success Tests
 extension CharacterRepositoryTest {
+    
     func testSuccessCase_getCharacterList() async {
         do {
             let response = try await sut?.getCharacterList(pageNumber: nil)
@@ -49,6 +50,7 @@ extension CharacterRepositoryTest {
 
 //MARK: - Failure Tests
 extension CharacterRepositoryTest {
+    
     func testFailureCase_getCharacterList() async {
         do {
             let _ = try await sutFailure?.getCharacterList(pageNumber: nil)
