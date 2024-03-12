@@ -28,6 +28,8 @@
 		D6D5E0712B9F90190011992B /* CharacterListBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0702B9F90190011992B /* CharacterListBusinessModel.swift */; };
 		D6D5E0752BA074890011992B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0742BA074890011992B /* Router.swift */; };
 		D6D5E07A2BA078980011992B /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0792BA078980011992B /* HomePage.swift */; };
+		D6D5E07F2BA081720011992B /* HomePageViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E07E2BA081720011992B /* HomePageViewModelTest.swift */; };
+		D6D5E0822BA081E80011992B /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0812BA081E80011992B /* HomePageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		D6D5E0702B9F90190011992B /* CharacterListBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListBusinessModel.swift; sourceTree = "<group>"; };
 		D6D5E0742BA074890011992B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D6D5E0792BA078980011992B /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		D6D5E07E2BA081720011992B /* HomePageViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModelTest.swift; sourceTree = "<group>"; };
+		D6D5E0812BA081E80011992B /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +261,7 @@
 		D6D5E03F2B9DF6590011992B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				D6D5E07B2BA081200011992B /* Presentation */,
 				D6D5E0682B9F717B0011992B /* Domain */,
 				D6D5E0402B9DF6630011992B /* Data */,
 			);
@@ -348,6 +353,7 @@
 		D6D5E0762BA078680011992B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D6D5E0802BA081D30011992B /* ViewModel */,
 				D6D5E0772BA0786E0011992B /* View */,
 			);
 			path = Home;
@@ -359,6 +365,38 @@
 				D6D5E0792BA078980011992B /* HomePage.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D6D5E07B2BA081200011992B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E07C2BA0812D0011992B /* HomePage */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D6D5E07C2BA0812D0011992B /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E07D2BA081360011992B /* ViewModel */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		D6D5E07D2BA081360011992B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E07E2BA081720011992B /* HomePageViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6D5E0802BA081D30011992B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0812BA081E80011992B /* HomePageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,6 +537,7 @@
 				D6D5E0332B9DCE330011992B /* NSCacheStore.swift in Sources */,
 				D6D5E03A2B9DD7C10011992B /* CharacterListResponse.swift in Sources */,
 				D6D5E07A2BA078980011992B /* HomePage.swift in Sources */,
+				D6D5E0822BA081E80011992B /* HomePageViewModel.swift in Sources */,
 				D6D5E0032B9DA49C0011992B /* ContentView.swift in Sources */,
 				D6D5E0452B9DF9450011992B /* CharacterRepository.swift in Sources */,
 				D6D5E02D2B9DAB6A0011992B /* AppService.swift in Sources */,
@@ -514,6 +553,7 @@
 				D6D5E06A2B9F71930011992B /* CharacterUseCaseTest.swift in Sources */,
 				D6D5E04B2B9E001E0011992B /* FakeApiService.swift in Sources */,
 				D6D5E0122B9DA49F0011992B /* RickAndMortyAppTests.swift in Sources */,
+				D6D5E07F2BA081720011992B /* HomePageViewModelTest.swift in Sources */,
 				D6D5E0432B9DF6B30011992B /* CharacterRepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
