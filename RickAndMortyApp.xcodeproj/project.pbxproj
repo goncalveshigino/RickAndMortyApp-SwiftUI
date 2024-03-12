@@ -30,6 +30,10 @@
 		D6D5E07A2BA078980011992B /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0792BA078980011992B /* HomePage.swift */; };
 		D6D5E07F2BA081720011992B /* HomePageViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E07E2BA081720011992B /* HomePageViewModelTest.swift */; };
 		D6D5E0822BA081E80011992B /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0812BA081E80011992B /* HomePageViewModel.swift */; };
+		D6D5E0852BA0D5AE0011992B /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0842BA0D5AE0011992B /* NavigationBarView.swift */; };
+		D6D5E0892BA0D7BF0011992B /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0882BA0D7BF0011992B /* AnimatableFontModifier.swift */; };
+		D6D5E08B2BA0DB000011992B /* BackgroundStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E08A2BA0DB000011992B /* BackgroundStyleModifier.swift */; };
+		D6D5E08D2BA0DC760011992B /* BackgroundColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E08C2BA0DC760011992B /* BackgroundColorModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		D6D5E0792BA078980011992B /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		D6D5E07E2BA081720011992B /* HomePageViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModelTest.swift; sourceTree = "<group>"; };
 		D6D5E0812BA081E80011992B /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		D6D5E0842BA0D5AE0011992B /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		D6D5E0882BA0D7BF0011992B /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
+		D6D5E08A2BA0DB000011992B /* BackgroundStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundStyleModifier.swift; sourceTree = "<group>"; };
+		D6D5E08C2BA0DC760011992B /* BackgroundColorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColorModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +344,8 @@
 		D6D5E0722B9F98C80011992B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D6D5E0872BA0D7750011992B /* Modifiers */,
+				D6D5E0832BA0D55E0011992B /* Components */,
 				D6D5E0762BA078680011992B /* Home */,
 				D6D5E0732B9F996B0011992B /* Router */,
 			);
@@ -397,6 +407,32 @@
 				D6D5E0812BA081E80011992B /* HomePageViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6D5E0832BA0D55E0011992B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0862BA0D5BB0011992B /* NavigationBarView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D6D5E0862BA0D5BB0011992B /* NavigationBarView */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0842BA0D5AE0011992B /* NavigationBarView.swift */,
+			);
+			path = NavigationBarView;
+			sourceTree = "<group>";
+		};
+		D6D5E0872BA0D7750011992B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5E0882BA0D7BF0011992B /* AnimatableFontModifier.swift */,
+				D6D5E08A2BA0DB000011992B /* BackgroundStyleModifier.swift */,
+				D6D5E08C2BA0DC760011992B /* BackgroundColorModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D5E0752BA074890011992B /* Router.swift in Sources */,
+				D6D5E08B2BA0DB000011992B /* BackgroundStyleModifier.swift in Sources */,
 				D6D5E06D2B9F72830011992B /* CharacterUseCase.swift in Sources */,
 				D6D5E0302B9DAD190011992B /* AppError.swift in Sources */,
 				D6D5E0712B9F90190011992B /* CharacterListBusinessModel.swift in Sources */,
@@ -537,10 +574,13 @@
 				D6D5E0332B9DCE330011992B /* NSCacheStore.swift in Sources */,
 				D6D5E03A2B9DD7C10011992B /* CharacterListResponse.swift in Sources */,
 				D6D5E07A2BA078980011992B /* HomePage.swift in Sources */,
+				D6D5E0892BA0D7BF0011992B /* AnimatableFontModifier.swift in Sources */,
 				D6D5E0822BA081E80011992B /* HomePageViewModel.swift in Sources */,
 				D6D5E0032B9DA49C0011992B /* ContentView.swift in Sources */,
 				D6D5E0452B9DF9450011992B /* CharacterRepository.swift in Sources */,
+				D6D5E08D2BA0DC760011992B /* BackgroundColorModifier.swift in Sources */,
 				D6D5E02D2B9DAB6A0011992B /* AppService.swift in Sources */,
+				D6D5E0852BA0D5AE0011992B /* NavigationBarView.swift in Sources */,
 				D6D5E0012B9DA49C0011992B /* RickAndMortyAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

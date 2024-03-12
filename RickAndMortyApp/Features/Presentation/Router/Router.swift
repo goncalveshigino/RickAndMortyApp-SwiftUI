@@ -25,14 +25,14 @@ extension Router {
     
     enum Routes {
         static let routes: [Paths: AnyView] = [
-            .homePage: AnyView(HomePage())
+            .homePage: AnyView(HomePage(viewModel: HomePageViewModel()))
         ]
     }
     
     static func getRoute(for path: Paths) -> AnyView {
         switch path {
         case .homePage:
-            return AnyView(HomePage())
+            return AnyView(HomePage(viewModel: HomePageViewModel()))
         case .custom(let view):
             return view
         }

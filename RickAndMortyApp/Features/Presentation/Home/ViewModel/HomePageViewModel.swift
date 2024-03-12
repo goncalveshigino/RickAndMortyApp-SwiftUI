@@ -10,6 +10,7 @@ import Observation
 
 
 @Observable class HomePageViewModel {
+    
     private let useCase: CharacterUseCase
     
     var characterList: [CharacterBusinessModel] = []
