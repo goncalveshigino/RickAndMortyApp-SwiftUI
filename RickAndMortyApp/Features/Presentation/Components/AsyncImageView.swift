@@ -25,11 +25,7 @@ struct AsyncImageView: View {
         }
         .onAppear {
             Task {
-                do {
-                    image = try await downloadImage(url: url)
-                } catch {
-                    Text("Mostrar imagem de error")
-                }
+                image = try await downloadImage(url: url)
             }
         }
     }

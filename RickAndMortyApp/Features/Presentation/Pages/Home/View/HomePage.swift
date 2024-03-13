@@ -46,7 +46,7 @@ struct HomePage: View {
             
         }
         .sheet(isPresented: $showDetail) {
-            //CharacterDetailView(character: selectedCharacter)
+            CharacterDetailPage(character: selectedCharacter)
         }
         .preferredColorScheme(.dark)
     }

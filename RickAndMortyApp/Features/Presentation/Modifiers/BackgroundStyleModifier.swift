@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct BackgroundStyle: ViewModifier {
     var cornerRadius: CGFloat = 20
     var opacity: Double = 0.6

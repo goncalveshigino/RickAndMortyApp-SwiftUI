@@ -11,6 +11,8 @@
 		D6882E862BA19AC500166979 /* SectionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6882E852BA19AC500166979 /* SectionRowView.swift */; };
 		D6882E882BA19C4800166979 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6882E872BA19C4700166979 /* CircularView.swift */; };
 		D6882E8A2BA19C9000166979 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6882E892BA19C9000166979 /* AsyncImageView.swift */; };
+		D6882E8F2BA1D4A800166979 /* CharacterDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6882E8E2BA1D4A800166979 /* CharacterDetailPage.swift */; };
+		D6882E912BA1E29C00166979 /* DetailTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6882E902BA1E29C00166979 /* DetailTitleModifier.swift */; };
 		D6D5E0012B9DA49C0011992B /* RickAndMortyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0002B9DA49C0011992B /* RickAndMortyAppApp.swift */; };
 		D6D5E0032B9DA49C0011992B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5E0022B9DA49C0011992B /* ContentView.swift */; };
 		D6D5E0052B9DA49E0011992B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D5E0042B9DA49E0011992B /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		D6882E852BA19AC500166979 /* SectionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRowView.swift; sourceTree = "<group>"; };
 		D6882E872BA19C4700166979 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 		D6882E892BA19C9000166979 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		D6882E8E2BA1D4A800166979 /* CharacterDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPage.swift; sourceTree = "<group>"; };
+		D6882E902BA1E29C00166979 /* DetailTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTitleModifier.swift; sourceTree = "<group>"; };
 		D6D5DFFD2B9DA49C0011992B /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D5E0002B9DA49C0011992B /* RickAndMortyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppApp.swift; sourceTree = "<group>"; };
 		D6D5E0022B9DA49C0011992B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,8 +152,17 @@
 		D6882E8C2BA1B50300166979 /* CharacterDetailPage */ = {
 			isa = PBXGroup;
 			children = (
+				D6882E8D2BA1D49100166979 /* View */,
 			);
 			path = CharacterDetailPage;
+			sourceTree = "<group>";
+		};
+		D6882E8D2BA1D49100166979 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6882E8E2BA1D4A800166979 /* CharacterDetailPage.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D6D5DFF42B9DA49B0011992B = {
@@ -475,6 +488,7 @@
 				D6D5E0882BA0D7BF0011992B /* AnimatableFontModifier.swift */,
 				D6D5E08A2BA0DB000011992B /* BackgroundStyleModifier.swift */,
 				D6D5E08C2BA0DC760011992B /* BackgroundColorModifier.swift */,
+				D6882E902BA1E29C00166979 /* DetailTitleModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -615,6 +629,7 @@
 				D6D5E0302B9DAD190011992B /* AppError.swift in Sources */,
 				D6D5E0712B9F90190011992B /* CharacterListBusinessModel.swift in Sources */,
 				D6882E882BA19C4800166979 /* CircularView.swift in Sources */,
+				D6882E912BA1E29C00166979 /* DetailTitleModifier.swift in Sources */,
 				D6882E832BA1960100166979 /* ScrollPreferenceKey.swift in Sources */,
 				D6D5E0482B9DFDD70011992B /* RemoteURL.swift in Sources */,
 				D6D5E0332B9DCE330011992B /* NSCacheStore.swift in Sources */,
@@ -624,6 +639,7 @@
 				D6D5E0892BA0D7BF0011992B /* AnimatableFontModifier.swift in Sources */,
 				D6D5E0822BA081E80011992B /* HomePageViewModel.swift in Sources */,
 				D6D5E0032B9DA49C0011992B /* ContentView.swift in Sources */,
+				D6882E8F2BA1D4A800166979 /* CharacterDetailPage.swift in Sources */,
 				D6D5E0452B9DF9450011992B /* CharacterRepository.swift in Sources */,
 				D6D5E08D2BA0DC760011992B /* BackgroundColorModifier.swift in Sources */,
 				D6D5E02D2B9DAB6A0011992B /* AppService.swift in Sources */,
