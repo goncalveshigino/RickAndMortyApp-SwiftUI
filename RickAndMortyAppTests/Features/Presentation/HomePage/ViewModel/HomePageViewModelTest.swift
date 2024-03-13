@@ -31,7 +31,10 @@ class HomePageViewModelTest: XCTestCase {
 //MARK: - Success Tests
 extension HomePageViewModelTest {
     func testSuccessCase_loadCharacterList() async {
+        //WHEN
         await sut?.loadCharacterList()
+        
+        //THEN
         XCTAssertFalse(sut?.characterList.isEmpty ?? false)
         XCTAssertTrue(sut?.characterList.first?.id == 21)
         
