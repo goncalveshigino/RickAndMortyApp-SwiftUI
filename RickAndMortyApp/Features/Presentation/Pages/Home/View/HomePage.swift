@@ -37,7 +37,6 @@ struct HomePage: View {
             }
         }
         .alert(isPresented: $viewModel.hasError) {
-            
             Alert(
                 title: Text("Importante Message"),
                 message: Text(viewModel.viewError?.localizedDescription ?? "UnexPected error in happen"),

@@ -45,7 +45,7 @@ struct NavigationBarView: View {
                         .backgroundStyle(cornerRadius: 16, opacity: 0.4)
                 }
                 .sheet(isPresented: $showSheet) {
-                   // SearchView(viewModel: SearchViewModel())
+                    SearchPage(viewModel: SearchPageViewModel())
                 }
                 .padding(.top, 8)
             }
